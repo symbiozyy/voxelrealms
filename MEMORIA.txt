@@ -6,10 +6,10 @@ Para ler no começo de uma nova conversa e retomar o trabalho sem perder o conte
 
 1. ONDE ESTÁ TUDO
 -----------------
-Repositório ...... github.com/symbiozyy/voxel-realms (branch main; antes ficava em amplitudelab/lab, pasta voxel-realms/)
-Jogo publicado ... https://symbiozyy.github.io/voxel-realms/
-Histórico visual . https://symbiozyy.github.io/voxel-realms/HISTORICO.html
-APK Android ...... https://github.com/symbiozyy/voxel-realms/releases/download/apk/voxel-realms.apk
+Repositório ...... github.com/symbiozyy/voxelrealms (branch main; antes ficava em amplitudelab/lab, pasta voxel-realms/)
+Jogo publicado ... https://symbiozyy.github.io/voxelrealms/
+Histórico visual . https://symbiozyy.github.io/voxelrealms/HISTORICO.html
+APK Android ...... https://github.com/symbiozyy/voxelrealms/releases/download/apk/voxel-realms.apk
                    (WebView que abre o link do jogo; o Play Protect bloqueia, então o
                    recomendado é instalar pelo Chrome como app: botão "INSTALAR APP")
 Versão antiga .... v10.html (arquivo único da V10)

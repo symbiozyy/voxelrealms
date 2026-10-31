@@ -27,7 +27,7 @@ import android.widget.FrameLayout;
  * Sempre em paisagem, tela cheia imersiva e na maior taxa de atualização da tela (120 Hz).
  */
 public class MainActivity extends Activity {
-    static final String URL = "https://symbiozyy.github.io/voxel-realms/";
+    static final String URL = "https://symbiozyy.github.io/voxelrealms/";
     static final String HOST = "symbiozyy.github.io";
 
     private FrameLayout root;
