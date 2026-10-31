@@ -6,35 +6,35 @@ Para ler no começo de uma nova conversa e retomar o trabalho sem perder o conte
 
 1. ONDE ESTÁ TUDO
 -----------------
-Repositório ...... github.com/amplitudelab/lab (branch main; antes symbiozyy/amplitude-lab)
-Jogo publicado ... https://amplitudelab.github.io/lab/voxel-realms/
-Histórico visual . https://amplitudelab.github.io/lab/voxel-realms/HISTORICO.html
-APK Android ...... https://github.com/amplitudelab/lab/releases/download/apk/voxel-realms.apk
+Repositório ...... github.com/symbiozyy/voxel-realms (branch main; antes ficava em amplitudelab/lab, pasta voxel-realms/)
+Jogo publicado ... https://symbiozyy.github.io/voxel-realms/
+Histórico visual . https://symbiozyy.github.io/voxel-realms/HISTORICO.html
+APK Android ...... https://github.com/symbiozyy/voxel-realms/releases/download/apk/voxel-realms.apk
                    (WebView que abre o link do jogo; o Play Protect bloqueia, então o
                    recomendado é instalar pelo Chrome como app: botão "INSTALAR APP")
-Versão antiga .... voxel-realms/v10.html (arquivo único da V10)
+Versão antiga .... v10.html (arquivo único da V10)
 
-Estrutura dentro de voxel-realms/:
+Estrutura do repositório:
   index.html, css/style.min.css, js/game.min.js, js/three.min.js  -> versão publicada (gerada)
   src/                    -> CÓDIGO-FONTE (é aqui que se edita)
   src/build.js            -> junta e minifica tudo em game.min.js (terser + clean-css)
   sw.js                   -> service worker (rede primeiro, cache para jogar sem internet)
   manifest.json, icons/   -> instalação como app (PWA), tela cheia e horizontal
   README.md               -> resumo das funções do jogo
-voxel-realms-android/     -> projeto do app Android (WebView); o APK é gerado pelo
+android/                  -> projeto do app Android (WebView); o APK é gerado pelo
                              GitHub Actions (.github/workflows/android.yml) e publicado na release "apk"
 
 
 2. COMO PUBLICAR UMA VERSÃO NOVA
 --------------------------------
-1) Editar os arquivos em voxel-realms/src/ (copiar para uma pasta de trabalho, se quiser).
+1) Editar os arquivos em src/ (copiar para uma pasta de trabalho, se quiser).
 2) Subir a versão no topo do src/index.html:
      const VR_VERSION='16.4'; const VR_NOTE='o que mudou (sem acento é mais seguro)';
    Ao abrir o jogo, quem estiver na versão antiga vê "VERSÃO NOVA DISPONÍVEL" e o botão
    ATUALIZAR AGORA (mesmo esquema do Quebrada Z).
 3) Rodar "node build.js" (precisa de: npm i terser clean-css) -> gera a pasta dist/.
-4) Copiar dist/ para voxel-realms/ (index.html, css/, js/, icons/, sw.js, manifest.json)
-   e o código-fonte para voxel-realms/src/.
+4) Copiar dist/ para a raiz (index.html, css/, js/, icons/, sw.js, manifest.json)
+   e o código-fonte para src/.
 5) Commit e push na main. O GitHub Pages publica sozinho em 1-2 minutos.
 Assinatura dos commits: Co-Authored-By: Claude <noreply@anthropic.com>
 

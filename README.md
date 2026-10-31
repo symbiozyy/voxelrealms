@@ -3,7 +3,7 @@
 RPG de ação em voxels, no navegador (Three.js r128, sem build). Mundo aberto de 440 × 440 blocos,
 gerado em pedaços (chunks) conforme o jogador anda, com ciclo de dia, pôr do sol e noite.
 
-Jogar: `https://amplitudelab.github.io/lab/voxel-realms/`
+Jogar: `https://symbiozyy.github.io/voxel-realms/`
 Versão anterior (V10, mapa único): `v10.html`
 
 ## Estrutura
@@ -244,5 +244,5 @@ A versão aparece no canto inferior esquerdo da tela de título e no menu. Ao ab
 No Chrome do Android, abra o link do jogo e toque em **📲 INSTALAR APP** na tela de título (ou no menu ⋮ → *Instalar app*). O jogo ganha ícone, abre em tela cheia na horizontal, se atualiza sozinho e não passa pelo Play Protect.
 
 ## App Android
-O APK é gerado automaticamente pelo GitHub Actions (`.github/workflows/android.yml`) a partir de `voxel-realms-android/`. Ele é um invólucro WebView que abre o jogo publicado, sempre em paisagem, em tela cheia e na maior taxa de atualização da tela. Como carrega o link, o jogo se atualiza sozinho.
-Download: https://github.com/amplitudelab/lab/releases/download/apk/voxel-realms.apk
+O APK é gerado automaticamente pelo GitHub Actions (`.github/workflows/android.yml`) a partir de `android/`. Ele é um invólucro WebView que abre o jogo publicado, sempre em paisagem, em tela cheia e na maior taxa de atualização da tela. Como carrega o link, o jogo se atualiza sozinho.
+Download: https://github.com/symbiozyy/voxel-realms/releases/download/apk/voxel-realms.apk
